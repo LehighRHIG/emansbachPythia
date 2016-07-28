@@ -1,3 +1,3 @@
-# ControlCard
+# Eli Mansbach, Summer 2016 Research
 
-Everything needed to run the control card for testing, including instructions. Simply unzip and follow the instructions in ControlCardOperation7212016.pdf
+Everything from Eli's REU work from summer 2016

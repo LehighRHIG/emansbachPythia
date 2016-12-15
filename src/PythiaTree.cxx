@@ -195,7 +195,7 @@ Int_t main(int argc, const char** argv) {
                 new ( HardPartons[fkHard]) TLorentzVector ( pv.px(), pv.py(), pv.pz(), pv.e() ) ;
                 new ( HardPartonNames[fkHard]) TParameter<int> (namenumber);
                 fkHard++;
-                TLorentzVector* p=new TLorentzVector();
+                /*TLorentzVector* p=new TLorentzVector();
                 p->SetPxPyPzE( pv.px(), pv.py(), pv.pz(), pv.e() );
                 if((particle.name()=="gamma")&&(fabs(p->Eta())<1)){
                     new( ReconstructedParticles[recontrack]) TLorentzVector(*p);
@@ -224,7 +224,7 @@ Int_t main(int argc, const char** argv) {
                     new ( ReconPhiTower[recontrack]) TParameter<int> (ptower);
                     new ( ReconNames[recontrack]) TParameter<int> (namenumber);
                     recontrack++;
-                }
+                }*/
             }
             
             //Next save final state particles
@@ -266,7 +266,7 @@ Int_t main(int argc, const char** argv) {
             
             
             //Code to Simlate STAR resolution and efficiency
-            double eff=random->Rndm();
+           /* double eff=random->Rndm();
             if(fabs(p->Eta())<1){
                 if((particle.name()=="gamma")||(particle.name()=="pi0")){
                     new( ReconstructedParticles[recontrack]) TLorentzVector(*p);
